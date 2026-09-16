@@ -48,9 +48,10 @@ export default function FindTherapistCta() {
             </p>
 
             <div>
+              {/* Genuine Ellipse Button matching the Squarespace design */}
               <Link
                 href="#contact"
-                className="inline-block border border-[#2B2B2B] hover:bg-[#86B3B3] hover:border-[#86B3B3] hover:text-white px-9 py-3 rounded-full text-[12px] tracking-[0.2em] transition-all duration-300 uppercase font-medium"
+                className="w-[160px] h-[54px] rounded-[50%] border border-[#4A4A4A] hover:bg-[#2B2B2B] hover:text-white flex items-center justify-center text-[12px] tracking-[0.2em] transition-all duration-300 uppercase font-medium text-[#2B2B2B]"
               >
                 BOOK NOW
               </Link>
