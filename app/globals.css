@@ -16,6 +16,9 @@
 :root {
   --background: #F6F4EE;
   --foreground: #2B2B2B;
+  --sqs-site-max-width: 1500px;
+  --sqs-site-gutter: 4vw;
+  --sqs-mobile-site-gutter: 6vw;
 }
 
 body {
@@ -24,10 +27,95 @@ body {
   font-family: var(--font-mulish), system-ui, sans-serif;
 }
 
-/* Custom arch shapes for the distinctive photography framing */
-.arch-top {
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
+/* Authentic Squarespace Fluid Engine Hero Grid System */
+.hero-fluid-grid {
+  --grid-gutter: calc(var(--sqs-mobile-site-gutter, 6vw) - 11px);
+  --cell-max-width: calc((var(--sqs-site-max-width, 1500px) - (11px * (8 - 1))) / 8);
+  display: grid;
+  position: relative;
+  grid-template-rows: repeat(24, minmax(24px, auto));
+  grid-template-columns:
+    minmax(var(--grid-gutter), 1fr)
+    repeat(8, minmax(0, var(--cell-max-width)))
+    minmax(var(--grid-gutter), 1fr);
+  row-gap: 11px;
+  column-gap: 11px;
+  overflow-x: clip;
+}
+
+@media (min-width: 768px) {
+  .hero-fluid-grid {
+    --grid-gutter: calc(var(--sqs-site-gutter, 4vw) - 11px);
+    --cell-max-width: calc((var(--sqs-site-max-width, 1500px) - (11px * (24 - 1))) / 24);
+    --inset-padding: 0vw;
+    --row-height-scaling-factor: 0.0215;
+    --container-width: min(var(--sqs-site-max-width, 1500px), calc(100vw - var(--sqs-site-gutter, 4vw) * 2 - var(--inset-padding)));
+    grid-template-rows: repeat(18, minmax(calc(var(--container-width) * var(--row-height-scaling-factor)), auto));
+    grid-template-columns:
+      minmax(var(--grid-gutter), 1fr)
+      repeat(24, minmax(0, var(--cell-max-width)))
+      minmax(var(--grid-gutter), 1fr);
+  }
+}
+
+.hero-grid-subtitle {
+  grid-area: 2 / 2 / 5 / 10;
+  z-index: 4;
+}
+@media (min-width: 768px) {
+  .hero-grid-subtitle {
+    grid-area: 2 / 12 / 4 / 21;
+    z-index: 7;
+  }
+}
+
+.hero-grid-heading {
+  grid-area: 5 / 2 / 12 / 10;
+  z-index: 3;
+}
+@media (min-width: 768px) {
+  .hero-grid-heading {
+    grid-area: 7 / 12 / 15 / 24;
+    z-index: 6;
+  }
+}
+
+.hero-grid-cta {
+  grid-area: 12 / 2 / 14 / 10;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  --sqs-block-content-flex: 0;
+}
+@media (min-width: 768px) {
+  .hero-grid-cta {
+    grid-area: 15 / 12 / 17 / 24;
+    z-index: 2;
+    justify-content: center;
+  }
+}
+
+.hero-grid-img-left {
+  grid-area: 15 / 1 / 24 / 8;
+  z-index: 5;
+}
+@media (min-width: 768px) {
+  .hero-grid-img-left {
+    grid-area: 2 / 1 / 17 / 10;
+    z-index: 5;
+  }
+}
+
+.hero-grid-img-right {
+  grid-area: 18 / 9 / 24 / 11;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .hero-grid-img-right {
+    grid-area: 7 / 25 / 17 / 27;
+    z-index: 4;
+  }
 }
 
 /* Subtle luxury line link hover animation */
