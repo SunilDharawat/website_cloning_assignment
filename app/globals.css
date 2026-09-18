@@ -536,7 +536,7 @@ body {
 }
 
 .hww-grid-heading {
-  grid-area: 1 / 2 / 5 / 10;
+  grid-area: 12 / 2 / 16 / 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -553,7 +553,7 @@ body {
 }
 
 .hww-grid-col1 {
-  grid-area: 5 / 2 / 15 / 10;
+  grid-area: 16 / 2 / 26 / 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -571,7 +571,7 @@ body {
 }
 
 .hww-grid-col2 {
-  grid-area: 15 / 2 / 25 / 10;
+  grid-area: 26 / 2 / 36 / 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -589,7 +589,7 @@ body {
 }
 
 .hww-grid-cta {
-  grid-area: 25 / 2 / 28 / 10;
+  grid-area: 36 / 2 / 39 / 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,7 +606,7 @@ body {
 }
 
 .hww-grid-img {
-  grid-area: 28 / 2 / 39 / 10;
+  grid-area: 1 / 2 / 12 / 10;
   position: relative;
   z-index: 6;
 }
@@ -703,7 +703,7 @@ body {
   display: grid;
   position: relative;
   grid-area: 1 / 1 / -1 / -1;
-  grid-template-rows: repeat(31, minmax(24px, auto));
+  grid-template-rows: repeat(34, minmax(24px, auto));
   grid-template-columns:
     minmax(var(--grid-gutter), 1fr) repeat(8, minmax(0, var(--cell-max-width))) minmax(var(--grid-gutter), 1fr);
   gap: 11px;
@@ -724,9 +724,9 @@ body {
   }
 }
 
-/* 1. Left image */
+/* 1. Left image (Mobile: Top, Desktop: Left) */
 .find-cta-img-left {
-  grid-area: 21 / 2 / 26 / 10;
+  grid-area: 1 / 2 / 8 / 10;
   position: relative;
   z-index: 2;
 }
@@ -740,7 +740,7 @@ body {
 
 /* 2. Heading */
 .find-cta-heading {
-  grid-area: 1 / 2 / 6 / 10;
+  grid-area: 8 / 2 / 13 / 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -759,7 +759,7 @@ body {
 
 /* 3. Paragraph 1 */
 .find-cta-p1 {
-  grid-area: 6 / 2 / 14 / 10;
+  grid-area: 13 / 2 / 21 / 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -778,7 +778,7 @@ body {
 
 /* 4. Paragraph 2 */
 .find-cta-p2 {
-  grid-area: 14 / 2 / 17 / 10;
+  grid-area: 21 / 2 / 24 / 10;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -797,7 +797,7 @@ body {
 
 /* 5. Book now button */
 .find-cta-btn {
-  grid-area: 17 / 2 / 20 / 10;
+  grid-area: 24 / 2 / 27 / 10;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -811,9 +811,9 @@ body {
   }
 }
 
-/* 6. Right image */
+/* 6. Right image (Mobile: Bottom, Desktop: Right) */
 .find-cta-img-right {
-  grid-area: 26 / 2 / 32 / 10;
+  grid-area: 27 / 2 / 34 / 10;
   position: relative;
   z-index: 2;
 }

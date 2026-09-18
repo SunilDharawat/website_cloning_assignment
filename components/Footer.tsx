@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           
           {/* Column 1: Brand & Office Intro */}
-          <div className="lg:col-span-4 space-y-6">
+          <div className="order-1 lg:order-1 lg:col-span-4 space-y-6">
             <div className="relative w-56 sm:w-64 h-16">
               <Image
                 src="/assets/images/logo.png"
@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Navigate */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="order-2 lg:order-2 lg:col-span-2 space-y-4">
             <h4 className="text-[11px] sm:text-[12px] tracking-[0.22em] text-[#2B2B2B] uppercase font-semibold">
               NAVIGATE
             </h4>
@@ -75,7 +75,7 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Our Team */}
-          <div className="lg:col-span-3 space-y-4">
+          <div className="order-4 lg:order-3 lg:col-span-3 space-y-4">
             <h4 className="text-[11px] sm:text-[12px] tracking-[0.22em] text-[#2B2B2B] uppercase font-semibold">
               OUR TEAM
             </h4>
@@ -94,7 +94,7 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Contact */}
-          <div className="lg:col-span-3 space-y-4">
+          <div className="order-3 lg:order-4 lg:col-span-3 space-y-4">
             <h4 className="text-[11px] sm:text-[12px] tracking-[0.22em] text-[#2B2B2B] uppercase font-semibold">
               CONTACT
             </h4>

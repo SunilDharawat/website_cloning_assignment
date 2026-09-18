@@ -7,7 +7,7 @@ export default function HowWeWork() {
     <section id="how-we-work" className="how-we-work-wrapper w-full bg-[#E3D9CA] border-t border-[#D7CCBC]/50 overflow-hidden">
       <div className="how-we-work-grid w-full">
         
-        {/* Section Heading (Desktop: 2/3/6/18, Mobile: 1/2/5/10) */}
+        {/* Section Heading (Desktop: 2/3/6/18, Mobile: 12/2/16/10) */}
         <div className="hww-grid-heading">
           <p className="text-[11px] sm:text-[12px] tracking-[0.22em] text-[#555] uppercase font-semibold mb-3">
             HOW WE WORK
@@ -17,7 +17,7 @@ export default function HowWeWork() {
           </h2>
         </div>
 
-        {/* Column 1 Text (Desktop: 6/3/17/10, Mobile: 5/2/15/10) */}
+        {/* Column 1 Text (Desktop: 6/3/17/10, Mobile: 16/2/26/10) */}
         <div className="hww-grid-col1 flex flex-col justify-start">
           <p className="text-[12px] sm:text-[13px] tracking-[0.16em] text-[#2B2B2B] uppercase font-semibold leading-relaxed mb-4">
             THE CLIENTS WE WORK WITH ARE BALANCING SO MANY THINGS AT ONCE, IT’S
@@ -33,7 +33,7 @@ export default function HowWeWork() {
           </p>
         </div>
 
-        {/* Column 2 Text (Desktop: 6/11/17/18, Mobile: 15/2/25/10) */}
+        {/* Column 2 Text (Desktop: 6/11/17/18, Mobile: 26/2/36/10) */}
         <div className="hww-grid-col2 flex flex-col justify-start">
           <p className="text-[#3F3F3F] text-[15px] sm:text-[16px] font-light leading-[1.75]">
             Sometimes we may gently challenge you to look at things differently
@@ -47,7 +47,7 @@ export default function HowWeWork() {
           </p>
         </div>
 
-        {/* CTA Link Button (Desktop: 17/3/20/10, Mobile: 25/2/28/10) */}
+        {/* CTA Link Button (Desktop: 17/3/20/10, Mobile: 36/2/39/10) */}
         <div className="hww-grid-cta">
           <Link
             href="#contact"
@@ -57,7 +57,7 @@ export default function HowWeWork() {
           </Link>
         </div>
 
-        {/* Dune Photo: Mother & Daughter (Desktop: 1/19/25/27, Mobile: 26/2/37/10) */}
+        {/* Dune Photo: Mother & Daughter (Desktop: 1/19/25/27, Mobile: 1/2/12/10 - Top on mobile) */}
         <div className="hww-grid-img relative w-full h-full min-h-[320px] sm:min-h-0 rounded-none overflow-hidden shadow-xs">
           <Image
             src="/assets/images/how-we-work.jpg"

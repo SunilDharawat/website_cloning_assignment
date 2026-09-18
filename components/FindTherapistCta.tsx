@@ -7,7 +7,7 @@ export default function FindTherapistCta() {
     <section className="find-cta-wrapper w-full bg-[#F6F4EE] border-t border-[#E3D9CA]/40 overflow-hidden">
       <div className="find-cta-grid w-full">
         
-        {/* 1. Left image (Desktop: 2/1/15/6, Mobile: 21/2/26/10) */}
+        {/* 1. Left image (Desktop: 2/1/15/6, Mobile: 1/2/8/10) */}
         <div className="find-cta-img-left relative w-full h-full min-h-[260px] sm:min-h-0 rounded-none overflow-hidden">
           <Image
             src="/assets/images/find-arch-left.jpg"
@@ -18,7 +18,7 @@ export default function FindTherapistCta() {
           />
         </div>
 
-        {/* 2. Heading (Desktop: 1/7/6/19, Mobile: 1/2/6/10) */}
+        {/* 2. Heading (Desktop: 1/7/6/19, Mobile: 8/2/13/10) */}
         <div className="find-cta-heading">
           <p className="text-[11px] sm:text-[12px] tracking-[0.22em] text-[#555] uppercase font-semibold mb-3">
             SCHEDULE AN APPOINTMENT
@@ -31,21 +31,21 @@ export default function FindTherapistCta() {
           </h2>
         </div>
 
-        {/* 3. Paragraph 1 (Desktop: 6/7/12/19, Mobile: 6/2/14/10) */}
+        {/* 3. Paragraph 1 (Desktop: 6/7/12/19, Mobile: 13/2/21/10) */}
         <div className="find-cta-p1">
           <p className="text-[#4A4A4A] text-[15px] sm:text-[16px] font-light leading-[1.75]">
             Coming to therapy is a courageous decision, and connecting with the right kind of therapist makes all the difference. We understand that your journey is personal, and we&apos;re here to support you with care and understanding every step of the way. Each member of our team brings dedicated expertise and a commitment to support you in your struggles. We want you to feel prioritized, understood, and empowered.
           </p>
         </div>
 
-        {/* 4. Paragraph 2 (Desktop: 12/7/14/19, Mobile: 14/2/17/10) */}
+        {/* 4. Paragraph 2 (Desktop: 12/7/14/19, Mobile: 21/2/24/10) */}
         <div className="find-cta-p2">
           <p className="text-[#4A4A4A] text-[15px] sm:text-[16px] font-light leading-[1.75]">
             Click the button below to schedule an appointment.
           </p>
         </div>
 
-        {/* 5. Book now button (Desktop: 14/7/17/12, Mobile: 17/2/20/10) */}
+        {/* 5. Book now button (Desktop: 14/7/17/12, Mobile: 24/2/27/10) */}
         <div className="find-cta-btn">
           <Link
             href="#contact"
@@ -55,7 +55,7 @@ export default function FindTherapistCta() {
           </Link>
         </div>
 
-        {/* 6. Right image (Desktop: 1/20/17/27, Mobile: 26/2/32/10) */}
+        {/* 6. Right image (Desktop: 1/20/17/27, Mobile: 27/2/34/10) */}
         <div className="find-cta-img-right relative w-full h-full min-h-[260px] sm:min-h-0 rounded-none overflow-hidden">
           <Image
             src="/assets/images/find-arch-right.jpg"
