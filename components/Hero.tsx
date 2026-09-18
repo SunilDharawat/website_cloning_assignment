@@ -47,7 +47,7 @@ export default function Hero() {
           <div>
             <Link
               href="#contact"
-              className="inline-block text-[12px] tracking-[0.22em] font-medium text-[#2B2B2B] uppercase border-b border-[#2B2B2B] pb-1 hover:text-[#86B3B3] hover:border-[#86B3B3] transition-colors"
+              className="animated-underline-btn text-[12px] tracking-[0.22em] font-medium uppercase"
             >
               BOOK AN APPOINTMENT
             </Link>

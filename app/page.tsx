@@ -6,6 +6,7 @@ import WhoWeHelp from "@/components/WhoWeHelp";
 import QuoteBanner from "@/components/QuoteBanner";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import HowWeWork from "@/components/HowWeWork";
+import ShapeFutureSection from "@/components/ShapeFutureSection";
 import SpecialtiesGrid from "@/components/SpecialtiesGrid";
 import FindTherapistCta from "@/components/FindTherapistCta";
 import Footer from "@/components/Footer";
@@ -34,7 +35,10 @@ export default function Home() {
       {/* Section 6: How We Work (Warm Sand) */}
       <HowWeWork />
 
-      {/* Section 7 & 8: Honoring Where You've Been + Specialties Grid */}
+      {/* Section 7: Honoring Where You've Been & Helping Shape Future */}
+      <ShapeFutureSection />
+
+      {/* Section 8: Specialties Grid */}
       <SpecialtiesGrid />
 
       {/* Section 9: Find a Therapist CTA */}

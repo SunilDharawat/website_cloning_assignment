@@ -20,15 +20,6 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMobileFolder, setActiveMobileFolder] = useState<string | null>(null);
   const [activeDesktopDropdown, setActiveDesktopDropdown] = useState<string | null>(null);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 15);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   // Lock body scroll when mobile menu is open
   useEffect(() => {
@@ -78,13 +69,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header
-      className={`sticky top-0 z-50 w-full transition-all duration-200 ${
-        scrolled
-          ? "bg-[#F6F4EE] py-3 sm:py-4 shadow-xs"
-          : "bg-[#F6F4EE] py-4 sm:py-6"
-      }`}
-    >
+    <header className="relative z-50 w-full bg-[#F6F4EE] py-4 sm:py-6">
       <div className="w-full px-6 sm:px-10 lg:px-14 flex items-center justify-between">
         
         {/* Left: Brand Logo (start property) */}

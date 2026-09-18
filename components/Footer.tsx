@@ -15,7 +15,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="w-full bg-[#F6F4EE] border-t border-[#E3D9CA]/40 pt-16 sm:pt-20">
+    <footer id="contact" className="w-full bg-white pt-16 sm:pt-20">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-10 pb-16 sm:pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           
@@ -131,16 +131,18 @@ export default function Footer() {
       </div>
 
       {/* Bottom Teal Legal Strip */}
-      <div className="w-full bg-[#749D9D] py-4 text-center px-6">
-        <p className="text-white text-[12px] sm:text-[13px] font-light tracking-wide">
-          <Link href="#terms" className="hover:underline">Terms</Link>
-          {" "}|{" "}
-          <Link href="#privacy" className="hover:underline">Privacy Policy</Link>
-          {" "}|{" "}
-          <Link href="#disclaimer" className="hover:underline">Disclaimer</Link>
-          {" "}|{" "}
-          <span>Website by Walker Strategy Co.</span>
-        </p>
+      <div className="w-full bg-[#749D9D] py-[calc(0.5vmax)] px-6 sm:px-10 text-left">
+        <div className="max-w-[1400px] mx-auto whitespace-pre-wrap text-left">
+          <p className="text-white text-[12px] sm:text-[13px] font-light tracking-wide text-left">
+            <Link href="#terms" className="text-white hover:underline">Terms</Link>
+            {" | "}
+            <Link href="#privacy" className="text-white hover:underline">Privacy Policy</Link>
+            {" | "}
+            <Link href="#disclaimer" className="text-white hover:underline">Disclaimer</Link>
+            {" | "}
+            <span className="text-white">Website by Walker Strategy Co.</span>
+          </p>
+        </div>
       </div>
     </footer>
   );
